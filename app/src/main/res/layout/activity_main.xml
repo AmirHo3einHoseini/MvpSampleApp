@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/noteRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/noteEditText"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/noteEditText"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/addNoteButton"
+        android:background="@color/colorPrimary"
+        android:hint="Enter note here!!!"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#88FFFFFF" />
+
+    <Button
+        android:id="@+id/addNoteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorAccent"
+        android:drawableLeft="@drawable/add"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:text="Add"
+        android:textColor="#FFFFFF" />
+</RelativeLayout>
